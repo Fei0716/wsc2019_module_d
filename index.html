@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Platform</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <the-nav></the-nav>
+
+        <!-- content -->
+        <div class="container">
+            <router-view></router-view>
+        </div>
+        <the-alert></the-alert>
+
+        <script src="vendor/vue/vue.global.js"></script>
+        <script src="vendor/vue/vue-router.global.js"></script>
+
+
+        <script type="module" src="src/components/nav.js"></script>
+        <script type="module" src="src/components/alert.js"></script>
+
+        <script type="module" src="src/views/EventList.js"></script>
+        <script type="module" src="src/views/EventAgenda.js"></script>
+        <script type="module" src="src/views/EventRegistration.js"></script>
+        <script type="module" src="src/views/SessionDetail.js"></script>
+        <script type="module" src="src/views/UserLogin.js"></script>
+
+
+        <script type="module" src="src/router.js"></script>
+        <script src="src/ajax.js"></script>
+        <script src="src/store.js"></script>
+        <script type="module" src="src/main.js"></script>
+
+    </div>
+
+</body>
+
+</html>
